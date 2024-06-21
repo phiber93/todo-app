@@ -15,7 +15,7 @@ export default function ListTodosComponent() {
 
     const [message, setMessage] = useState(null)
 
-    useEffect(() => refreshTodos(username))
+    useEffect(() => refreshTodos(username),[])
 
     function refreshTodos() {
         retrieveAllTodosForUsername(username)
